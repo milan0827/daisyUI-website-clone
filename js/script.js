@@ -2,7 +2,6 @@ const logo = document.querySelector(".logo");
 const nav = document.querySelector(".nav");
 const background = document.querySelector(".background");
 const numbers = document.querySelector(".page__stats--details");
-const speed = 200;
 
 const click = logo.addEventListener("click", () => {
   nav.classList.add("nav__active");
