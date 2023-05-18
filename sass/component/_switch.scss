@@ -1,0 +1,63 @@
+.switch {
+  margin-right: 4rem;
+  color: darken($color-white, 30%);
+
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  &__label {
+    position: relative;
+
+    & span {
+      top: 0;
+      right: -4.5rem;
+      background-color: darken($color-white, 40%);
+      width: 40px;
+      height: 20px;
+      border-radius: 1rem;
+
+      &::before {
+        content: "";
+        background-color: $color-white;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+      }
+    }
+
+    & span,
+    & span::before {
+      position: absolute;
+      display: block;
+      transition: all 0.4s;
+    }
+  }
+}
+
+.switch__toggle {
+  opacity: 0;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.switch__toggle:checked + .switch__label span:before {
+  transform: translateX(2rem);
+}
+
+#switch-1:checked + .switch__label span {
+  background-color: $color-green;
+}
+
+#switch-2:checked + .switch__label span {
+  background-color: $color-pink;
+}
+
+#switch-3:checked + .switch__label span {
+  background-color: $color-blue;
+}
+
+#switch-4:checked + .switch__label span {
+  background-color: darken($color-black, 40%);
+}

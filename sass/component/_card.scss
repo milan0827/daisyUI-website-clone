@@ -1,0 +1,140 @@
+.card {
+  background-color: $color-black;
+  width: 25rem;
+  min-width: 25rem;
+  padding: 3rem;
+  border-radius: 2rem;
+  text-align: center;
+
+  &__text {
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+
+    &--1 {
+      background-color: $color-green;
+      color: darken($color-black, 80%);
+      border-radius: 1rem;
+      padding: 1.2rem;
+    }
+
+    &--2 {
+      background-color: lighten($color-blue, 30%);
+      color: darken($color-black, 80%);
+      border-radius: 1rem;
+      padding: 1.2rem;
+    }
+  }
+
+  &--3 {
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+
+    & .heading__tertiary {
+      padding-left: 2rem;
+    }
+
+    & .card__detail {
+      padding-left: 2rem;
+
+      & span {
+        display: inline-block;
+      }
+    }
+  }
+
+  &__features span {
+    background-color: darken($color-black, 5%);
+    padding: 0.3rem 0.8rem;
+    border-radius: 2rem;
+
+    &:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__image {
+    width: 100%;
+
+    //card--5 image
+    &--5 {
+      width: 7rem;
+      border-radius: $border-radius;
+    }
+  }
+
+  &--4 {
+    padding: 4rem 2rem;
+  }
+
+  &__detail {
+    &--4 {
+      background-color: darken($color-black, 5%);
+      border-radius: 1rem;
+      padding: 2rem;
+      @include displayFlex(column, center);
+      gap: 2rem;
+
+      &-transparent {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &__figure {
+    &--5 {
+      @include displayFlex(row, center);
+      gap: 3rem;
+    }
+  }
+
+  &--5 {
+    &-description {
+      // height: 38rem;
+    }
+  }
+
+  &--6 {
+    padding: 1.5rem;
+  }
+}
+
+.figure {
+  &__image {
+    display: block;
+    margin: 0 auto;
+    border-radius: 5rem;
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.line {
+  display: block;
+  position: relative;
+  width: 100%;
+
+  @include displayFlex(row, center);
+  justify-content: center;
+
+  &::before,
+  &::after {
+    display: block;
+    content: "";
+    background-color: darken($color-white, 40%);
+    width: 9rem;
+    height: 0.1rem;
+    position: absolute;
+    top: 1rem;
+  }
+
+  &::before {
+    left: 0;
+  }
+
+  &::after {
+    right: 0;
+  }
+}

@@ -1,0 +1,41 @@
+.hero {
+  background-image: linear-gradient(to right bottom, $color-blue, $color-pink);
+  height: 110vh;
+  position: relative;
+
+  &__section {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+  }
+}
+
+.page__stats {
+  @include displayFlex(row, center);
+  gap: 3rem;
+  justify-content: center;
+  position: absolute;
+  bottom: 15%;
+  right: 50%;
+  left: 50%;
+  line-height: 1;
+
+  @media only screen and(max-width: 43.75em) {
+    @include displayFlex(column, center);
+    // bottom: 30%;
+  }
+
+  &--details {
+    @include displayFlex(column, center);
+    color: darken($color-white, 40%);
+    text-decoration: none;
+    font-size: 3rem;
+    font-weight: 800;
+
+    & span {
+      font-size: 1.2rem;
+      color: darken($color-white, 60%);
+      font-weight: 500;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.search {
+  width: 100%;
+  position: relative;
+
+  &__box {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: inherit;
+
+    border-radius: 0.5rem;
+    border: none;
+
+    &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 0.3rem;
+    right: 0.8rem;
+  }
+}

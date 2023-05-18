@@ -1,0 +1,36 @@
+.logo {
+  cursor: pointer;
+
+  &__bar {
+    &,
+    &::before,
+    &::after {
+      display: block;
+      width: 3rem;
+      height: 0.5rem;
+      background-color: $color-black;
+      position: relative;
+    }
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+    }
+
+    &::before {
+      top: 1rem;
+    }
+
+    &::after {
+      top: 2rem;
+    }
+  }
+}
+
+#logo {
+  visibility: hidden;
+}
+
+// .header .logo #logo:checked  .nav {
+//   transform: translateX(0);
+// }

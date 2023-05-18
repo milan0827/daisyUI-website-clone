@@ -1,0 +1,50 @@
+body {
+  font-family: "barlow", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 1.4px;
+  color: $color-white;
+}
+
+.heading__primary {
+  font-size: 6rem;
+  color: $color-white;
+}
+
+.heading__secondary {
+  font-size: 2.5rem;
+  color: $color-white;
+  font-weight: 500;
+}
+
+.heading__tertiary {
+  font-size: 2rem;
+  color: darken($color-white, 30%);
+  font-weight: 500;
+}
+
+.main-2__heading {
+  // color: $color-black;
+}
+
+h4 {
+  font-size: 1.3rem;
+  color: darken($color-white, 50%);
+}
+
+.hero__list {
+  list-style: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.card__text,
+.card__features span,
+.html__code {
+  color: darken($color-white, 40%);
+}
+
+.html__elements--title {
+  @include displayFlex(column, center);
+}

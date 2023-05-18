@@ -1,0 +1,53 @@
+.range {
+  width: 100%;
+  margin-bottom: 2.1rem;
+  font-size: 1.2rem;
+
+  & span {
+    position: relative;
+    background-color: lighten($color-black, 4%);
+    margin-left: 1rem;
+    width: 12rem;
+    height: 1rem;
+
+    &::before {
+      position: absolute;
+      content: "";
+      background-color: white;
+      top: 0.099rem;
+      left: 0;
+      height: 0.8rem;
+    }
+  }
+
+  & span,
+  & span::before {
+    display: inline-block;
+    border-radius: $border-radius;
+  }
+
+  &-1 span::before {
+    background-color: $color-green;
+    width: 55%;
+  }
+
+  &-2 span::before {
+    background-color: $color-pink;
+    width: 40%;
+  }
+
+  &-3 span::before {
+    background-color: $color-blue;
+    width: 90%;
+  }
+
+  &-4 span::before {
+    background-color: $color-white;
+    width: 30%;
+  }
+
+  &-5 span::before {
+    background-color: lighten($color-blue, 20%);
+    width: 60%;
+  }
+}

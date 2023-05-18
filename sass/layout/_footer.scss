@@ -1,0 +1,42 @@
+.footer {
+  background-color: darken($color-black, 5%);
+  padding: 8rem;
+
+  @media only screen and (max-width: 62.5em) {
+    padding: 2rem;
+  }
+
+  &__section {
+    @include displayFlex(row, start);
+    justify-content: space-between;
+    gap: 4rem;
+
+    @media only screen and (max-width: 50em) {
+      @include displayFlex(column, center);
+      width: 100%;
+    }
+  }
+
+  &__left {
+    flex: 0 0 15%;
+
+    @media only screen and (max-width: 50em) {
+      align-self: start;
+    }
+  }
+
+  &__mid {
+    @include displayFlex(column, start);
+    width: 100%;
+  }
+
+  &__link {
+    color: darken($color-white, 20%);
+    text-decoration: none;
+    margin-bottom: 2rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

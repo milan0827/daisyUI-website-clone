@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/283ed528df.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__nav--left">
+          <div class="logo">
+            <label for="logo"><span class="logo__bar"></span></label>
+            <input type="checkbox" id="logo" />
+          </div>
+
+          <div class="search">
+            <input type="text" class="search__box" placeholder="Search..." />
+            <i class="fa-solid fa-magnifying-glass search__icon icon"></i>
+          </div>
+        </div>
+
+        <ul class="header__nav--right">
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__link link">Components</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__link link link__theme"
+              >Theme &darr;</a
+            >
+          </li>
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__link link">En</a>
+          </li>
+          <li class="header__nav__item">
+            <a href="#" class="header__nav__link link"
+              ><i class="fa-solid fa-user icon"></i
+            ></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="background"></div>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a href="#" class="nav__link link"
+            ><i class="fa-solid fa-cloud-arrow-down"></i>Install</a
+          >
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link"
+            ><i class="fa-solid fa-bolt"></i>Use</a
+          >
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link"
+            ><i class="fa-solid fa-code"></i>Component</a
+          >
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link"
+            ><i class="fa-solid fa-sliders"></i>Config</a
+          >
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link"
+            ><i class="fa-solid fa-paint-roller"></i>Colors</a
+          >
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link"
+            ><i class="fa-solid fa-wand-magic-sparkles"></i>Themes</a
+          >
+        </li>
+      </ul>
+
+      <ul class="nav__list">
+        <span class="nav__text">Actions</span>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Button</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Dropdown</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Modal</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Swap</a>
+        </li>
+      </ul>
+
+      <ul class="nav__list">
+        <span class="nav__text">Data display</span>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Alert</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Avatar</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Badge</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Card</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Courasel</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Chat bubble</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Countdown</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Table</a>
+        </li>
+      </ul>
+
+      <ul class="nav__list">
+        <span class="nav__text">Layout</span>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Artboard</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Button group</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Footer</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Hero</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Mask</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Stack</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Input group</a>
+        </li>
+        <li class="nav__item">
+          <a href="#" class="nav__link link">Toast</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero__section">
+        <div class="hero__heading">
+          <h1 class="heading__primary margin-bottom-small">
+            daisyUI Components
+          </h1>
+          <h2 class="heading__secondary margin-bottom-large">
+            Use tailwind css and write fewer css class
+          </h2>
+        </div>
+
+        <ul class="hero__list margin-bottom-medium">
+          <li class="hero__features">
+            <i class="fa-solid fa-check"></i>A free plugin for tailwind css
+          </li>
+          <li class="hero__features">
+            <i class="fa-solid fa-check"></i>Faster development
+          </li>
+          <li class="hero__features">
+            <i class="fa-solid fa-check"></i>Cleaner HTML
+          </li>
+          <li class="hero__features">
+            <i class="fa-solid fa-check"></i>Customizable and themeable
+          </li>
+          <li class="hero__features">
+            <i class="fa-solid fa-check"></i>Pure CSS and work on all frameworks
+          </li>
+        </ul>
+
+        <div class="button">
+          <button class="btn btn__primary btn__white margin-right-medium">
+            See Components
+          </button>
+          <button class="btn btn__primary btn__black">How to use</button>
+        </div>
+      </div>
+    </section>
+
+    <main class="main">
+      <section class="main-1">
+        <div class="container">
+          <header class="container__header margin-bottom-medium">
+            <div class="header__nav--right">
+              <div class="logo">
+                <label for="logo"><span class="logo__bar"></span></label>
+                <input type="checkbox" id="logo" />
+              </div>
+
+              <h2 class="heading__secondary">Components Preview</h2>
+            </div>
+
+            <div class="header__nav--left">
+              <div class="search">
+                <input
+                  type="text"
+                  class="search__box"
+                  placeholder="Search..."
+                />
+                <i class="fa-solid fa-magnifying-glass search__icon icon"></i>
+              </div>
+              <i class="fa-solid fa-bell icon"></i>
+              <i class="fa-solid fa-user icon"></i>
+            </div>
+          </header>
+
+          <div class="card__container">
+            <div class="card card--1">
+              <figure class="figure margin-bottom-medium">
+                <img
+                  src="img/face-1.jpg"
+                  alt="face 1"
+                  class="figure__image margin-bottom-medium"
+                />
+                <figcaption class="heading__tertiary">Milan Rokaya</figcaption>
+              </figure>
+
+              <div class="card__typography margin-bottom-medium">
+                <p class="card__text">Strategic Art Manager</p>
+                <p class="card__text">Global Illustration Observation</p>
+                <p class="card__text">Business Alignment Developer</p>
+              </div>
+
+              <div class="card__features margin-bottom-medium">
+                <span>Design</span>
+                <span>Art</span>
+                <span>Illustration</span>
+              </div>
+
+              <div class="button">
+                <button class="btn card__btn card__btn--1">Follow</button>
+                <button class="btn card__btn card__btn--2">...</button>
+              </div>
+            </div>
+
+            <div class="card card--2">
+              <h3 class="heading__tertiary margin-bottom-medium">
+                Superpower settings
+              </h3>
+
+              <div class="card__typography margin-bottom-medium">
+                <p class="card__text">
+                  Enable your favourite. Terms and conditions apply.
+                </p>
+              </div>
+
+              <div for="" class="switch">
+                <input type="checkbox" id="switch-1" class="switch__toggle" />
+                <label for="switch-1" class="switch__label"
+                  ><span></span> Enable teleportation</label
+                >
+              </div>
+
+              <div for="" class="switch">
+                <input type="checkbox" id="switch-2" class="switch__toggle" />
+                <label for="switch-2" class="switch__label"
+                  ><span></span> Enable time travel</label
+                >
+              </div>
+
+              <div for="" class="switch">
+                <input type="checkbox" id="switch-3" class="switch__toggle" />
+                <label for="switch-3" class="switch__label"
+                  ><span></span> Enable laser eyes</label
+                >
+              </div>
+
+              <div for="" class="switch">
+                <input type="checkbox" id="switch-4" class="switch__toggle" />
+                <label for="switch-4" class="switch__label"
+                  ><span></span> Enable immortality</label
+                >
+              </div>
+
+              <button class="btn card__btn card__btn--3">
+                <i class="fa-solid fa-check icon card--icon"></i>Apply Settings
+              </button>
+            </div>
+
+            <div class="card card--3">
+              <figure class="card__figure margin-bottom-medium">
+                <img
+                  src="img/img-1.jpg"
+                  alt="face 1"
+                  class="card__image margin-bottom-large"
+                />
+                <figcaption class="heading__tertiary margin-bottom-large">
+                  Card Component
+                </figcaption>
+              </figure>
+
+              <div class="card__detail card__features margin-bottom-medium">
+                <span class="margin-bottom-medium">May 14th</span>
+                <p class="card__text">
+                  Use card components to easily show blog posts, products,
+                  features,items and more
+                </p>
+              </div>
+
+              <button class="btn card__btn card__btn--4">Get started</button>
+            </div>
+
+            <div class="card__profile">
+              <figure class="card__figure">
+                <img src="/img/face-2.jpg" alt="" class="card__figure--img" />
+              </figure>
+              <figure class="card__figure">
+                <img src="/img/face-3.jpg" alt="" class="card__figure--img" />
+              </figure>
+              <figure class="card__figure">
+                <img src="/img/face-4.jpg" alt="" class="card__figure--img" />
+              </figure>
+              <figure class="card__figure">
+                <img src="/img/face-5.jpg" alt="" class="card__figure--img" />
+              </figure>
+            </div>
+
+            <div class="card card--4">
+              <div class="card__detail card__detail--4 margin-bottom-medium">
+                <p class="card__text margin-bottom-medium">
+                  Lorem ipsum dolor sit, amet consectetur!
+                </p>
+
+                <div class="button button__card--4">
+                  <button class="btn card__btn card__btn--5">Cancel</button>
+                  <button class="btn card__btn card__btn--6">Apply</button>
+                </div>
+              </div>
+
+              <div
+                class="card__detail card__detail--4 card__detail--4-transparent"
+              >
+                <p class="card__text card__text--1">
+                  Lorem ipsum dolor, sit amet consectetur!
+                </p>
+                <p class="card__text card__text--2">
+                  Lorem ipsum dolor sit amet consectetur!
+                </p>
+              </div>
+            </div>
+
+            <div class="card--5">
+              <nav class="card__nav">
+                <ul class="card__nav--list">
+                  <li class="card__nav--item card__nav--item-1">Stats</li>
+                  <li class="card__nav--item card__nav--item-2">Info</li>
+                  <li class="card__nav--item card__nav--item-3">Options</li>
+                </ul>
+              </nav>
+
+              <div class="card card--5-description">
+                <figure
+                  class="card__figure card__figure--5 margin-bottom-medium"
+                >
+                  <img
+                    src="img/face-3.jpg"
+                    alt="face 1"
+                    class="card__image card__image--5 margin-bottom-medium"
+                  />
+                  <figcaption class="heading__tertiary">
+                    Milan Rokaya
+                  </figcaption>
+                </figure>
+
+                <span class="line card__text margin-bottom-medium"
+                  >Reports</span
+                >
+
+                <div class="reports">
+                  <p class="range range-1">Search engines<span></span></p>
+                  <p class="range range-2">Direct<span></span></p>
+                  <p class="range range-3">Social Media<span></span></p>
+                  <p class="range range-4">Emails<span></span></p>
+                  <p class="range range-5">Ad campaigns<span></span></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card--6">
+              <button class="btn card__button card__btn--7">Neutral</button>
+              <button class="btn card__button card__btn--8">Primary</button>
+              <button class="btn card__button card__btn--9">Secondary</button>
+              <button class="btn card__button card__btn--10">Accent</button>
+              <button class="btn card__button card__btn--11">Info</button>
+              <button class="btn card__button card__btn--12">Success</button>
+              <button class="btn card__button card__btn--13">Warning</button>
+              <button class="btn card__button card__btn--14">Error</button>
+              <button class="btn card__button card__btn--15">Outline</button>
+              <button class="btn card__button card__btn--16">Primary</button>
+              <button class="btn card__button card__btn--17">Secondary</button>
+              <button class="btn card__button card__btn--18">Accent</button>
+              <a href="#" class="link link--1">Ghost</a>
+              <a href="#" class="link link--1">Link</a>
+            </div>
+
+            <div class="card card--7">
+              <div class="menu card__menu margin-bottom-medium">
+                <h4>Main menu</h4>
+
+                <div class="menu__item">
+                  <span>Main Item 1</span>
+                  <span>Main Item 2</span>
+                  <span>Main Item 3</span>
+                </div>
+              </div>
+
+              <div class="card__link margin-bottom-medium">
+                <a href="#" class="card__link--item">
+                  <i class="fa-solid fa-folder"></i>
+                  <span>Add documents</span>
+                </a>
+                <span>&gt;</span>
+                <a href="#" class="card__link--item">
+                  <i class="fa-solid fa-file"></i>
+                  <span>Documents</span>
+                </a>
+              </div>
+
+              <div class="views">
+                <div class="count">
+                  <span>4000</span>
+                  <span>Views</span>
+                </div>
+
+                <div class="views__icon">
+                  <i class="fa-solid fa-eye"></i>
+                  <span>...</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card--8"></div>
+          </div>
+        </div>
+
+        <div class="page__stats">
+          <a href="#" class="page__stats--details"
+            >49 <span>Components</span></a
+          >
+          <a href="#" class="page__stats--details">29 <span>Themes</span></a>
+          <a href="#" class="page__stats--details"
+            >20,500 <span>Github stars</span></a
+          >
+          <a href="#" class="page__stats--details"
+            >5,050,500 <span>NPM installs</span></a
+          >
+        </div>
+
+        <button class="btn btn__primary btn__components">
+          See all components
+        </button>
+      </section>
+
+      <section class="main-2">
+        <div class="html__components margin-bottom-very-large">
+          <h1 class="heading__primary main-2__heading margin-bottom-small">
+            Clean Html
+          </h1>
+          <h2 class="heading__secondary margin-bottom-medium">
+            with component classes
+          </h2>
+          <div class="main-2--text">
+            <p class="card__text">
+              <span>Don't reinvent the wheel!</span>
+              daisyUI add the classes to the Tailwind CSS for all UI Components.
+              Classes like <span>btn</span>,<span>card</span>, etc. This allows
+              us to focus on important things instead of making basic elements
+              for enery HTML elements for every project.
+            </p>
+          </div>
+        </div>
+
+        <div class="html__tag margin-bottom-very-large">
+          <!-- creating button -->
+          <div class="html__elements--title margin-bottom-large">
+            <h3 class="heading__tertiary">Creating a button</h3>
+            <p class="card__text">
+              using only utility classes vs using daisy UI Component classes
+            </p>
+          </div>
+
+          <div class="html__elements margin-bottom-very-large">
+            <div class="html__elements--creation">
+              <div class="margin-bottom-medium"></div>
+              <code class="html__code">
+                &lt;a class="<span
+                  >inline-block px-4 py-3 text-sm font-semibold text-center
+                  text-white uppercase transition duration-200 ease-in-out
+                  bg-indigo-600 rounded-md cursor-pointer
+                  hover:bg-indigo-700</span
+                >"&gt;Button&lt;/a&gt;
+              </code>
+
+              <button class="btn html__button html__button-1">Button</button>
+            </div>
+
+            <div class="vertical__line">
+              <span></span>
+              <span>VS</span>
+              <span></span>
+            </div>
+
+            <div class="html__elements--creation">
+              <div class="margin-bottom-medium"></div>
+              <code class="html__code">
+                &lt;a class="<span>btn btn-primary</span>"&gt;Button&lt;/a&gt;
+              </code>
+
+              <button class="btn html__button html__button-2">Button</button>
+            </div>
+          </div>
+
+          <!-- Creating toggle -->
+          <div class="html__elements--title margin-bottom-large">
+            <h3 class="heading__tertiary">Creating a toggle</h3>
+            <p class="card__text">
+              using only utility classes vs using daisy UI Component classes
+            </p>
+          </div>
+
+          <div class="html__elements margin-bottom-very-large">
+            <div class="html__elements--creation">
+              <div class="margin-bottom-medium"></div>
+              <code class="html__code">
+                &lt;div class="<span>relative</span>"&gt; &lt;input
+                type="checkbox" class="<span
+                  >peer appearance-none cursor-pointer border border-gray-300
+                  rounded-full checked:border-gray-900 w-12 h-6</span
+                >"/&gt; &lt;span class="<span
+                  >peer-checked:left-7 peer-checked:bg-gray-900 transition-all
+                  duration-200 pointer-events-none w-4 h-4 block absolute top-1
+                  left-1 rounded-full bg-gray-300</span
+                >" &lt;/span&gt; &lt;/div&gt;
+              </code>
+
+              <figure class="switch">
+                <input type="checkbox" id="switch-5" class="switch__toggle" />
+                <label for="switch-5" class="switch__label"
+                  ><span></span
+                ></label>
+              </figure>
+            </div>
+
+            <div class="vertical__line">
+              <span></span>
+              <span>VS</span>
+              <span></span>
+            </div>
+
+            <div class="html__elements--creation">
+              <div class="margin-bottom-medium"></div>
+              <code class="html__code">
+                &lt;input type="checkbox"
+                class="<span>toggle</span>&gt;Button&lt;/a&gt;
+              </code>
+
+              <figure class="switch margin-top-very-large">
+                <input type="checkbox" id="switch-6" class="switch__toggle" />
+                <label for="switch-6" class="switch__label"
+                  ><span></span
+                ></label>
+              </figure>
+            </div>
+          </div>
+
+          <!-- Creating Menu -->
+          <div class="html__elements--title margin-bottom-large">
+            <h3 class="heading__tertiary">Creating a Menu</h3>
+            <p class="card__text">
+              using only utility classes vs using daisy UI Component classes
+            </p>
+          </div>
+
+          <div class="html__elements">
+            <div class="html__elements--creation">
+              <div class="margin-bottom-medium"></div>
+              <code class="html__code">
+                &lt;ul class="<span>py-3 bg-gray-100 rounded-xl</span
+                >"&gt;<br />
+                &lt;li&gt; <br />&lt;span class="<span
+                  >block px-5 py-1 text-xs text-gray-400 font-bold</span
+                >"&gt;Menu Title&lt;/span&gt; <br />&lt;/li&gt; <br />
+                &lt;li class="<span
+                  >block px-5 py-3 rounded-lg text-gray-900 hover:bg-gray-200
+                  active:bg-indigo-600 active:text-white outline-none
+                  cursor-pointer</span
+                >"&gt;First Menu Item <br />&lt;/li&gt;<br />
+                &lt;li class="<span
+                  >block px-5 py-3 rounded-lg text-gray-900 hover:bg-gray-200
+                  active:bg-indigo-600 active:text-white outline-none
+                  cursor-pointer</span
+                >"&gt;Second Menu Item <br />&lt;/li&gt; <br />&lt;li
+                class="<span
+                  >block px-5 py-3 rounded-lg text-gray-900 hover:bg-gray-200
+                  active:bg-indigo-600 active:text-white outline-none
+                  cursor-pointer</span
+                >"&gt;Third Menu Item <br />&lt;/li&gt; <br />&lt;/ul&gt;
+              </code>
+
+              <figure class="menu card__menu margin-bottom-medium html__menu">
+                <h4>Main menu</h4>
+
+                <figure class="menu__item html__menu--item">
+                  <span>First Menu Item</span>
+                  <span>Second Menu Item</span>
+                  <span>Third Menu Item</span>
+                </figure>
+              </figure>
+            </div>
+
+            <div class="vertical__line">
+              <span></span>
+              <span>VS</span>
+              <span></span>
+            </div>
+
+            <div class="html__elements--creation">
+              <div class="margin-bottom-medium"></div>
+              <code class="html__code">
+                &lt;ul class="<span>menu p-3 bg-base-200 rounded-xl</span>" &gt;
+                <br />
+                &lt;li class="menu-title"&gt; <br />
+                &lt;span&gt; Menu Title &lt;/span&gt;<br />&lt;/li&gt; <br />
+                &lt;li&gt; &lt;a&gt; First Menu Item&lt;/a&gt; &lt;/li&gt;
+                <br />
+                &lt;li&gt; &lt;a&gt; Second Menu Item&lt;/a&gt; &lt;/li&gt;
+                <br />
+                &lt;li&gt; &lt;a&gt; Third Menu Item&lt;/a&gt; &lt;/li&gt;
+              </code>
+
+              <figure class="menu card__menu margin-bottom-medium html__menu">
+                <h4>Main menu</h4>
+
+                <figure class="menu__item html__menu--item">
+                  <span>First Menu Item</span>
+                  <span>Second Menu Item</span>
+                  <span>Third Menu Item</span>
+                </figure>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn btn__primary btn__components btn__components--2">
+          See all components
+        </button>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__section">
+        <div class="footer__left">
+          <h1 class="heading__primary"><span>daisy</span>UI</h1>
+          <p>Free component library for utility first CSS frameworks</p>
+        </div>
+
+        <div class="footer__mid">
+          <h3 class="heading__tertiary margin-bottom-medium">Guides</h3>
+          <a href="#" class="footer__link">How to install</a>
+          <a href="#" class="footer__link">How to use components</a>
+          <a href="#" class="footer__link">How to customize</a>
+          <a href="#" class="footer__link">How to use system</a>
+          <a href="#" class="footer__link">Color system</a>
+          <a href="#" class="footer__link">Config</a>
+        </div>
+
+        <div class="footer__mid">
+          <h3 class="heading__tertiary margin-bottom-medium">Links</h3>
+          <a href="#" class="footer__link">Github</a>
+          <a href="#" class="footer__link">Changelog</a>
+          <a href="#" class="footer__link">Liscense</a>
+          <a href="#" class="footer__link">Contributing</a>
+        </div>
+
+        <div class="footer__mid">
+          <h3 class="heading__tertiary margin-bottom-medium">Available on</h3>
+          <a href="#" class="footer__link">NPM</a>
+          <a href="#" class="footer__link">Unpkg CDN</a>
+          <a href="#" class="footer__link">JSdeliver CDN</a>
+        </div>
+
+        <div class="footer__mid">
+          <h3 class="heading__tertiary margin-bottom-medium">Try online</h3>
+          <a href="#" class="footer__link">Tailwind play</a>
+          <a href="#" class="footer__link">Codepen</a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

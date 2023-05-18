@@ -1,0 +1,83 @@
+.main-2 {
+  padding: 8rem 20rem;
+  background-color: lighten($color-black, 5%);
+  position: relative;
+
+  @media only screen and(max-width: 87.5em) {
+    padding: 6rem 10rem;
+  }
+
+  @media only screen and(max-width: 75em) {
+    padding: 1rem 5rem;
+  }
+
+  // @media only screen and(max-width: 43.75em) {
+  //   padding: 0;
+  // }
+
+  & h1,
+  & h2 {
+    color: darken($color-white, 40%);
+  }
+
+  & .html__components {
+    text-align: center;
+    padding: 1rem 20rem;
+
+    @media only screen and(max-width: 75em) {
+      padding: 1rem 6rem;
+    }
+  }
+
+  & p {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  & p span {
+    &:first-child {
+      width: 100%;
+    }
+    display: inline-block;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      border: 1px solid $color-white;
+      border-radius: $border-radius;
+      padding: 0 0.5rem;
+    }
+  }
+}
+
+.menu {
+  @include displayFlex(column, start);
+
+  &__item {
+    @include displayFlex(column, center);
+  }
+}
+
+.html__menu {
+  padding: 2rem;
+  width: 60%;
+  margin-top: 4rem;
+  border-radius: $border-radius;
+  background-color: darken($color-black, 5%);
+
+  &--item {
+    color: darken($color-white, 40%);
+
+    & span {
+      display: block;
+      width: 100%;
+      padding: 1rem;
+      border-radius: 0.2rem;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: darken($color-white, 50%);
+      }
+    }
+  }
+}

@@ -1,0 +1,95 @@
+.html__elements {
+  @include displayFlex(row, center);
+  gap: 2rem;
+
+  @media only screen and(max-width: 75em) {
+    @include displayFlex(column, center);
+    margin-bottom: 14rem;
+  }
+
+  &--creation {
+    background-color: $color-black;
+    width: 60%;
+    // height: 26rem;
+    padding: 2rem;
+    border-radius: $border-radius;
+
+    @media only screen and(max-width: 75em) {
+      width: 80%;
+    }
+
+    @media only screen and(max-width: 43.75em) {
+      width: 100%;
+    }
+
+    & div {
+      position: relative;
+
+      &,
+      &::before,
+      &::after {
+        width: 1.5rem;
+        height: 1.5rem;
+        border-radius: 50%;
+        background-color: darken($color-white, 75%);
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+      }
+
+      &::before {
+        right: -2rem;
+      }
+
+      &::after {
+        right: -4rem;
+      }
+    }
+
+    & .html__code span {
+      color: $color-green;
+    }
+  }
+}
+
+.vertical__line {
+  @include displayFlex(column, center);
+  gap: 2rem;
+
+  @media only screen and(max-width: 75em) {
+    @include displayFlex(row, center);
+  }
+
+  & span {
+    color: darken($color-white, 40%);
+    display: block;
+  }
+
+  & span:first-child,
+  & span:last-child {
+    height: 10rem;
+    width: 2px;
+    background-color: darken($color-white, 70%);
+
+    @media only screen and(max-width: 75em) {
+      width: 10rem;
+      height: 2px;
+    }
+  }
+}
+
+.html__button {
+  display: block;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  padding: 1rem;
+  background-color: $color-blue;
+  color: $color-white;
+
+  &-2 {
+    margin-top: 11rem;
+  }
+}
